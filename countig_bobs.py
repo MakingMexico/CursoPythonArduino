@@ -8,15 +8,14 @@ if password == "password":
 
         text = input("Give me a bob text: ").lower()
 
-        bobs = 0
+        bobs_counter = 0
 
         for i in range(len(text)):
             if text[i: i+3] == 'bob':
-                bobs += 1
+                bobs_counter += 1
 
-        print("There are {} bobs".format(bobs))
+        print("There are {} bobs".format(bobs_counter))
         loop = input("Do you want to count bobs again? y/n\n").lower()
-
     else:
         print("See you! :)")
 
